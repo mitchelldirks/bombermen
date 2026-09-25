@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b14">
+  <title>Bomberman Classic</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="stage">
+      <canvas id="game" width="256" height="240"></canvas>
+    </div>
+
+    <div id="touch" class="touch">
+      <div class="dpad" id="dpad">
+        <div class="arm h"></div>
+        <div class="arm v"></div>
+        <span class="ind up">&#9650;</span>
+        <span class="ind down">&#9660;</span>
+        <span class="ind left">&#9664;</span>
+        <span class="ind right">&#9654;</span>
+      </div>
+      <button class="start" data-key="T_start" aria-label="Pause">II</button>
+      <div class="actions">
+        <button class="btn b" data-key="T_b" aria-label="Detonate">B</button>
+        <button class="btn a" data-key="T_a" aria-label="Bomb">A</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/core.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/sprites.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/world.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/enemy.js"></script>
+  <script src="js/bot.js"></script>
+  <script src="js/story.js"></script>
+  <script src="js/battle.js"></script>
+  <script src="js/menus.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
